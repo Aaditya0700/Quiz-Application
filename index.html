@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css">
+<title>Quick Quiz App</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Quick <span>Quiz</span></h1>
+    <p>Test your general knowledge</p>
+  </header>
+
+  <div class="card">
+
+    <!-- Difficulty Screen -->
+    <div id="diff-screen" class="screen active">
+      <div class="diff-screen">
+        <h2>Choose Difficulty</h2>
+        <p>Pick a level to begin — questions are shuffled every round</p>
+        <div class="diff-btns">
+          <button class="diff-btn easy-btn" onclick="chooseDiff('easy')">
+            <span>🟢 &nbsp;Easy</span>
+            <span class="d-meta">5 questions &nbsp;·&nbsp; 20s per question</span>
+          </button>
+          <button class="diff-btn medium-btn" onclick="chooseDiff('medium')">
+            <span>🟡 &nbsp;Medium</span>
+            <span class="d-meta">6 questions &nbsp;·&nbsp; 15s per question</span>
+          </button>
+          <button class="diff-btn hard-btn" onclick="chooseDiff('hard')">
+            <span>🔴 &nbsp;Hard</span>
+            <span class="d-meta">7 questions &nbsp;·&nbsp; 10s per question</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Name Screen -->
+    <div id="name-screen" class="screen">
+      <div class="name-screen">
+        <h2>Enter Your Name</h2>
+        <p>Your score will be saved to the leaderboard</p>
+        <input class="name-input" id="player-name" type="text" placeholder="Your name..." maxlength="20" />
+        <button class="start-btn" onclick="startQuiz()">Start Quiz →</button>
+      </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+      <div class="progress-row">
+        <span class="progress-label" id="q-counter">Question 1 of 5</span>
+        <span class="score-label" id="score-counter">Score: 0</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+      </div>
+      <div class="timer-row">
+        <span class="timer-icon">⏱️</span>
+        <div class="timer-bar-bg">
+          <div class="timer-bar" id="timer-bar" style="width:100%; background:#00e5b0"></div>
+        </div>
+        <span class="timer-num" id="timer-num" style="color:#00e5b0">15</span>
+      </div>
+      <div class="question-text" id="question-text"></div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <button class="next-btn" id="next-btn">Next question →</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen">
+      <div class="result">
+        <div class="result-score" id="result-score"></div>
+        <div class="result-total" id="result-total"></div>
+        <div class="result-badge" id="result-badge"></div>
+        <div class="result-msg" id="result-msg"></div>
+        <div class="lb-title">🏅 &nbsp;Top Scores</div>
+        <div class="lb-list" id="lb-list"></div>
+        <div class="result-btns">
+          <button class="play-again-btn" onclick="showDiff()">↺ &nbsp; Play Again</button>
+          <button class="review-btn" onclick="showReview()">📋 &nbsp; Review My Answers</button>
+          <button class="clear-btn" onclick="clearLeaderboard()">Clear leaderboard</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Screen -->
+    <div id="review-screen" class="screen">
+      <div class="review-header">
+        <button class="review-back-btn" onclick="showScreen('result-screen')">← Back</button>
+        <span class="review-header-text">Answer Review</span>
+        <span class="review-summary" id="review-summary"></span>
+      </div>
+      <div class="review-list" id="review-list"></div>
+      <div class="review-footer">
+        <button class="play-again-btn" onclick="showDiff()">↺ &nbsp; Play Again</button>
+        <button class="review-back-btn" style="width:100%;padding:11px;text-align:center;" onclick="showScreen('result-screen')">← Back to Results</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
