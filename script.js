@@ -66,7 +66,14 @@
 
   function startQuiz() {
     const n = document.getElementById('player-name').value.trim();
-    playerName = n || 'Player';
+
+if (n.length < 2) {
+  alert('Please enter a name with at least 2 characters.');
+  document.getElementById('player-name').focus();
+  return;
+}
+
+playerName = n;
     questions = shuffle(QUESTIONS[diff]).slice(0, Q_COUNTS[diff]);
     totalTime = TIME_LIMITS[diff];
     current = 0;
