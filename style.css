@@ -93,7 +93,7 @@
   .timer-bar { height: 6px; border-radius: 4px; transition: width 0.1s linear, background 0.3s; }
   .timer-icon { font-size: 14px; }
   .timer-num {
-    font-size: 13px; font-weight: 600;
+    font-size: 14px; font-weight: 600;
     min-width: 28px; text-align: right;
     transition: color 0.3s;
   }
