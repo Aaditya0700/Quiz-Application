@@ -150,7 +150,7 @@
 
   /* Result */
   .result { text-align: center; }
-  .result-score { font-size: 68px; font-weight: 600; color: #7c5cfc; line-height: 1; margin-bottom: 0.2rem; }
+  .result-score { font-size: 70px; font-weight: 600; color: #7c5cfc; line-height: 1; margin-bottom: 0.2rem; }
   .result-total { font-size: 15px; color: #6b6b80; margin-bottom: 1.25rem; }
   .result-badge {
     display: inline-block; padding: 5px 16px;
@@ -172,7 +172,7 @@
   .lb-empty { text-align: center; color: #6b6b80; font-size: 13px; padding: 1rem 0; }
   .lb-row {
     display: flex; align-items: center; gap: 10px;
-    padding: 9px 12px; background: #1c1c21;
+    padding: 10px 12px; background: #1c1c21;
     border-radius: 8px; border: 1px solid #2a2a30; font-size: 13px;
   }
   .lb-row.top1 { border-color: #00e5b0; background: rgba(0,229,176,0.06); }
