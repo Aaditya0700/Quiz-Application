@@ -139,7 +139,7 @@
 
   /* Next button */
   .next-btn {
-    margin-top: 1.25rem; width: 100%; padding: 12px;
+    margin-top: 1.25rem; width: 100%; padding: 13px;
     background: #7c5cfc; border: none; border-radius: 10px;
     color: #fff; font-family: 'Inter', sans-serif;
     font-size: 14px; font-weight: 500; cursor: pointer;
