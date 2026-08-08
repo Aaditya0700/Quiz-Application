@@ -36,7 +36,7 @@
   .diff-screen p { color: #6b6b80; font-size: 13px; margin-bottom: 1.5rem; }
   .diff-btns { display: flex; flex-direction: column; gap: 10px; }
   .diff-btn {
-    padding: 14px 16px; border-radius: 10px;
+    padding: 14px 16px; border-radius: 12px;
     border: 1px solid #2a2a30; background: #1c1c21;
     color: #e8e8f0; font-family: 'Inter', sans-serif;
     font-size: 15px; font-weight: 500; cursor: pointer;
