@@ -248,7 +248,8 @@ playerName = n;
     const pct   = Math.round(score / total * 100);
 
     document.getElementById('result-score').textContent = score;
-    document.getElementById('result-total').textContent = `out of ${total} questions`;
+    document.getElementById('result-total').textContent =
+  `out of ${total} questions • ${pct}%`;
 
     const badge = document.getElementById('result-badge');
     const msg   = document.getElementById('result-msg');
