@@ -111,7 +111,7 @@
     border-radius: 10px; padding: 11px 14px;
     color: #e8e8f0; font-family: 'Inter', sans-serif;
     font-size: 14px; text-align: left; cursor: pointer;
-    transition: border-color 0.15s, background 0.15s;
+    transition: border-color 0.15s, background 0.15s, transform 0.15s;
     display: flex; align-items: center; gap: 10px;
   }
   .option-btn .opt-letter {
@@ -121,7 +121,7 @@
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0; transition: background 0.15s, color 0.15s;
   }
-  .option-btn:hover:not(:disabled) { border-color: #7c5cfc; background: #1e1b2e; }
+  .option-btn:hover:not(:disabled) { border-color: #7c5cfc; background: #1e1b2e; transform: translateY(-2px);}
   .option-btn:hover:not(:disabled) .opt-letter { background: #7c5cfc; color: #fff; }
   .option-btn.correct { border-color: #00e5b0; background: #07241e; }
   .option-btn.correct .opt-letter { background: #00e5b0; color: #07241e; }
