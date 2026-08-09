@@ -254,7 +254,7 @@
   .review-answer-row {
     display: flex; align-items: center; gap: 8px;
     padding: 8px 10px; border-radius: 8px;
-    font-size: 13px; border: 1px solid transparent;
+    font-size: 14px; border: 1px solid transparent;
   }
   .review-answer-row.correct-ans {
     background: #07241e; border-color: #00e5b0;
