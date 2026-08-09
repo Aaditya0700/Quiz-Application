@@ -179,7 +179,7 @@
   .lb-row.top1 { border-color: #00e5b0; background: rgba(0,229,176,0.06); }
   .lb-row.top1 .lb-rank { color: #00e5b0; }
   .lb-rank { width: 20px; color: #6b6b80; font-weight: 600; flex-shrink: 0; }
-  .lb-name { flex: 1; color: #e8e8f0; }
+  .lb-name { flex: 1; font-size: 14px; color: #e8e8f0; }
   .lb-score { font-weight: 600; color: #7c5cfc; }
   .lb-diff { font-size: 11px; color: #6b6b80; margin-left: 4px; }
 
